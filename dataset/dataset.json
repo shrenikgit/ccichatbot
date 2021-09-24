@@ -1,0 +1,183 @@
+{
+   "intents":[
+      {
+         "tag":["greeting"],
+         "patterns":[
+            "Hi",
+            "How are you",
+            "Is anyone there?",
+            "Hello",
+            "Good day",
+            "Whats up",
+            "how are you doing"
+         ],
+         "responses":[
+            "Hi there, how can I help?"
+         ]
+      },
+      {
+         "tag":["goodbye"],
+         "patterns":[
+            "bye",
+            "Thanks bye",
+            "See you later",
+            "Goodbye",
+            "I am Leaving",
+            "Have a Good day"
+         ],
+         "responses":[
+            "Hope I was of help! :)"
+         ]
+      },
+      {
+         "tag":["thanks"],
+         "patterns":[
+            "thanks",
+            "Thanks a lot",
+            "So appreciated",
+            "Thanks a lot for help"
+         ],
+         "responses":[
+            "Welcome.."
+         ]
+      },
+      {
+         "tag":["Bot Master"],
+         "patterns":[
+            "who are you?",
+            "what are you",
+            "Whats your purpose?",
+            "Why people use you?",
+            "Why you are needed for People?"
+         ],
+         "responses":[
+            "I am an AI Chatbot for CCI, Programmed to assist you!"
+         ]
+      },
+      {
+         "tag":["CCI Overview"],
+         "patterns":[
+            "What is CCI ?",
+            "Is any document/guide available for CCI ?",
+            "What is Common Consmer Interface ?",
+            "Why CCI is needed ?",
+            "Whats the purpose of CCI ?",
+            "What are the uses of CCI ?",
+            "Overview of CCI On-boarding?",
+            "On boarding Docs for CCI?"
+         ],
+         "responses":[
+            "The key goal of CCI is to enable consumers to access metadata/data provided by any AppSDK based connectors (s) using a consistent, generic and stable API based interface. CCI makes it convenient to enable support for any existing as well as new AppSDK based connectors without any significant impact on the consumer. Also, the connectors need to be built only once and can be deployed in any product that supports CCI based apis resulting in reduced engineering and maintenance costs. \n For further info visit https://infawiki.informatica.com/display/CON/CCI+-+Onboarding"
+         ]
+      },
+      {
+         "tag":["REST API"],
+         "patterns":[
+            "Does CCI Supports REST API ?",
+            "Does CCI allows Postman Calls  via REST?",
+            "CCI REST exposes API for Consumers ?",
+            "Can you help me with REST API's of CCI ?",
+            "REST API's for CCI ?",
+            "Web Service API's for CCI ?"
+         ],
+         "responses":[
+            "CCI Provides REST API's. These REST API's will be called from SaaS UI. CCI REST API's could be called in StandAlone Mode as well. \n For Further Information visit https://infawiki.informatica.com/display/CON/CCI+Rest+API"
+         ]
+      },
+      {
+         "tag":["StandAlone Mode | Tomcat | Deployment in web server"],
+         "patterns":[
+            "How can i use CCI in StandAlone Mode ?",
+            "How to Deploy CCI in Tomcat ?",
+            "What is Standalone Mode ?"
+         ],
+         "responses":[
+            "CCI.war could be deployed in Tomcat as well. In StandAlone Mode, CCI.war will be deployed in tomcat and Any REST Client (Postman) could be used to access CCI REST API's. For Further Information visit https://infawiki.informatica.com/pages/viewpage.action?pageId=260407702"
+         ]
+      },
+      {
+         "tag":["Metadata Debugging | How to Set JRE_OPTS for Debugging | Debug Metadata in Eclipse"],
+         "patterns":[
+            "Please provide JVM arg for Metadata Debugging",
+            "JVM arg for Metadata Debug",
+            "JVM arg for Mapgen Debugging",
+            "How to debug mapgen phase",
+            "How to debug mapgen process"                      
+         ],
+         "responses":[
+            "TOMCAT JRE_OPTS '-Xrs -Xdebug -Xrunjdwp:transport=dt_socket,address=7882,server=y,suspend=n' \n Any Free Port could also be used \n For Further Details Visit https://infawiki.informatica.com/display/CON/Different+Flags+introduced+by+CCI"
+         ]
+      },
+      {
+         "tag":["Runtime Process Debugging | Debug DTM Process | Runtime Debugging in Eclipse"],
+         "patterns":[
+            "Please provide JVM arg for Runtime Debugging",
+            "JVM arg for Runtime Process Debug",
+            "JVM arg for DTM Process Debugging",
+            "How to debug Runtime/DTM",
+            "Debug DTM Process"                      
+         ],
+         "responses":[
+            "DTM JVMOption '-Xrs -Xdebug -Xrunjdwp:transport=dt_socket,address=7882,server=y,suspend=y' \n Any Free Port could also be used \n For Further Details Visit https://infawiki.informatica.com/display/CON/Different+Flags+introduced+by+CCI"
+         ]
+      },
+      {
+         "tag":["Capabilities | Function"],
+         "patterns":[
+            "Functions of CCI",
+            "Capabilities of CCI",
+            "Features of CCI"                      
+         ],
+         "responses":[
+            "Connector Registry Information\nConnection Presentation Information\nTest Connection\nImport/Create Metadata\nValidate Metadata\nData Extraction/loading\n For More Info Please visit https://infawiki.informatica.com/display/CON/CCI+Overview"
+         ]
+      },
+      {
+         "tag":["Connector Credentials | Connector Creds"],
+         "patterns":[
+            "Please provide credentials for Amazon S3 Connector",
+            "Google Big Query GBQ V2, Connector Creds please",
+            "Please give Connector creds",
+            "Can you provide Connector credentials",
+            "How can find connector credentials for CCI based connectors",
+            "Do you have a backup of Connector Creds?",
+            "Do you have Connector Creds handy?"                      
+         ],
+         "responses":[
+            "Please find Connector Credentials from https://informatica.sharepoint.com/:x:/s/GRConnectivityQA/EcNXyO2_3TdIuw45YzaldbEBLvwJefIgWwcxyz6oQRvASA?e=4%3AJJ0dMi&at=9"
+         ]
+      },
+      {
+         "tag":["Stored Procedure"],
+         "patterns":[
+            "Stored Proc",
+            "What is Stored Procedure",
+            "Which Parameters are used to pass values to the Procedure?"
+         ],
+         "responses":[
+            "Stored Procedures are created to perform one or more DML operations on Database. It is nothing but the group of SQL statements that accepts some input in the form of parameters and performs some task and may or may not returns a value. \n Parameters are used to pass values to the Procedure. There are 4 different types of parameters, they are IN, OUT, IN OUT, RETURN TYPE \n Refer https://infawiki.informatica.com/display/CON/Stored+Procedure+in+CCI+connectors for further details"
+         ]
+      },
+      {
+         "tag":["Adhoc Query Mode"],
+         "patterns":[
+            "What is Query Mode?",
+            "which are Query modes in SQL Tx?",
+            "Adhoc Query modes in SQLTx" 
+         ],
+         "responses":[
+            "When an SQL transformation runs in query mode, it executes an SQL query that you define in the transformation. You pass strings or parameters to the query from the transformation input ports to change the query statement or the query data. \n When you configure the SQL transformation to run in query mode, you create an active transformation. The transformation can return multiple rows for each input row. \n Type the query statement in the SQL Editor main window. The SQL Editor provides a list of the transformation ports that you can reference in the query. You can double-click a port name to add it as a query parameter. So the incoming port can be used as a parameter in your query.\nThe outgoing port have to be added manually, where the user will be required to give the respective native type as well.\nQuery mode PC documentation : \n https://docs.informatica.com/data-integration/powercenter/10-2/transformation-guide/sql-transformation/query-mode.html"
+         ]
+      },
+      {
+         "tag":["SQLTx Passthrough port Adhoc Query"],
+         "patterns":[
+            "What is passthrough port ?",
+            "What is purpose of passthrough port ?"
+         ],
+         "responses":[
+            "Any incoming port can be marked  for pass through, and we need to make sure that this port does not get overwritten with any other data. The outgoing passthrough port should have the same data as it had when it was incoming port. For Further details refer https://infawiki.informatica.com/display/CON/SQL+Tx+-+Adhoc+query+in+CDI"
+         ]
+      }
+   ]
+}
